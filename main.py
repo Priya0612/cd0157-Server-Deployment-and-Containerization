@@ -10,6 +10,9 @@ import jwt
 
 # pylint: disable=import-error
 from flask import Flask, jsonify, request, abort
+import collections
+import collections.abc
+from collections.abc import Mapping, MutableMapping
 
 
 JWT_SECRET = os.environ.get('JWT_SECRET', 'abc123abc1234')
